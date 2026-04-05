@@ -48,7 +48,6 @@ screenshots/
 *.log
 
 ### Selenium / browser leftovers ###
-*.png
 *.jpg
 *.jpeg
 *.webp
