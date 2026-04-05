@@ -62,13 +62,20 @@ https://practice-automation.com/form-fields/
 
 ## Запуск
 
-`mvn clean test` - запуск через Maven;
+`mvn clean test` - запуск тестов через Maven;
 
 `allure serve` - формирование отчёта Allure после выполнения тестов.
 
 <div align=center>
 
-![Сформированный отчет Allure](images/allure-report.png)
+![Сформированный отчет Allure](images/submit-valid-form.PNG)
 
-*Сформированный отчет Allure*
+*Сформированный отчет Allure по позитивному сценарию*
+</div>
+
+<div align=center>
+
+![Сформированный отчет Allure](images/submit-form-without-name.PNG)
+
+*Сформированный отчет Allure по негативному сценарию*
 </div>

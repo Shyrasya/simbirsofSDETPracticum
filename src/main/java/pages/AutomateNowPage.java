@@ -1,7 +1,7 @@
 package pages;
 
+import constants.AutomationAnswer;
 import core.BasePage;
-import enums.AutomationAnswer;
 import io.qameta.allure.Step;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;

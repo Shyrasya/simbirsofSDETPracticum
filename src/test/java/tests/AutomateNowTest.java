@@ -1,7 +1,7 @@
 package tests;
 
+import constants.AutomationAnswer;
 import core.DriverFactory;
-import enums.AutomationAnswer;
 import io.qameta.allure.Description;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -32,8 +32,11 @@ public class AutomateNowTest {
                     .selectFavoriteColor()
                     .selectAutomationValue(AutomationAnswer.YES)
                     .enterEmail("test@example.com")
-                    .fillMessageWithAutomationToolsInfo()
-                    .clickSubmit();
+                    .fillMessageWithAutomationToolsInfo();
+        });
+
+        step("Отправить заполненную форму", () -> {
+            page.clickSubmit();
         });
 
         step("Проверить текст алерта об успешной отправке", () -> {
@@ -52,8 +55,11 @@ public class AutomateNowTest {
                     .selectFavoriteColor()
                     .selectAutomationValue(AutomationAnswer.YES)
                     .enterEmail("test@example.com")
-                    .fillMessageWithAutomationToolsInfo()
-                    .clickSubmit();
+                    .fillMessageWithAutomationToolsInfo();
+        });
+
+        step("Отправить заполненную форму", () -> {
+            page.clickSubmit();
         });
 
         step("Проверить, что алерт не появился", () ->
